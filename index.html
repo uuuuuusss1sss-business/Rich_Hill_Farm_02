@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Hill Farm - Peach Farm</title>
+    <style>
+        @font-face {
+            font-family: 'Valencia';
+            src: url('static/fonts/Valencia.woff2') format('woff2'),
+                 url('static/fonts/Valencia.woff') format('woff'),
+                 url('static/fonts/Valencia.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Valencia', cursive; /* Use cursive as a fallback */
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #f8f5f2;
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+            font-size: 20px; /* Adjusted font size */
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-family: sans-serif; /* Keep nav font simple for legibility */
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 10px; /* Add some horizontal padding */
+            background: url('static/main_01.jpg') no-repeat center center/cover;
+            color: white;
+            min-height: 400px; /* Ensure header has height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, h2, h3 {
+            font-family: 'Valencia', cursive;
+            margin: 0;
+            font-weight: normal; /* Script fonts often don't need bold */
+        }
+        header h1 {
+            font-size: 5em; /* Adjusted font size for single line */
+            font-weight: bold; /* Make the font bold */
+            color: white; /* The inside color of the font */
+            text-shadow: 2px 2px 5px #00008B, 0 0 10px #00008B; /* Deep blue shadow/glow */
+        }
+        section {
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            font-size: 4em; /* Adjusted relative to body font size */
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: none; /* Remove shadow from other headings */
+        }
+        h3 {
+            font-size: 3em; /* Adjusted relative to body font size */
+            text-shadow: none; /* Remove shadow from other headings */
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .about-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .about-images img {
+            width: 48%;
+            height: 300px; /* Set a fixed height */
+            object-fit: cover; /* Ensure image covers the area without distortion */
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+            background: #333;
+            color: #fff;
+            font-family: sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            background: #eee;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 400px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: 'Valencia', cursive;
+            font-size: 1em;
+        }
+        form input[type="submit"] {
+            background: #c55a55;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+        form input[type="submit"]:hover {
+            background: #b34a45;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#location">Payment</a>
+        <a href="https://www.facebook.com/richhillfarm" target="_blank">Facebook</a>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Rich Hill Farm</h1>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Our Farm</h2>
+            <p>Welcome to Rich Hill Farm, a family-owned farm dedicated to growing the most delicious peaches. We take pride in our sustainable farming practices and our commitment to quality.</p>
+            <p>Our peach season typically runs from July to August. Come and visit us to pick your own fresh peaches, or buy them pre-picked at our farm stand. Enjoy a fun day out with the family and experience the joy of picking your own fruit.</p>
+            <div class="about-images">
+                <img src="static/chicken.jpg" alt="Chicken">
+                <img src="static/images_01.jfif" alt="Peaches">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Our Location</h2>
+            <p>Come visit us! We are conveniently located.</p>
+            <p><strong>Address:</strong> 123 Peach Lane, Farmville, FL 54321</p>
+            <div style="margin-top: 20px;">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 10:30 - 15:00</p>
+                <p>Saturday - Sunday: 10:00 - 15:00</p>
+            </div>
+            <div style="margin-top: 20px;">
+                <h3>Payment</h3>
+                <p>Cash, Paypal, Venmo (No Entry Fee)</p>
+            </div>
+            <div id="map">Map Placeholder - An interactive map can be embedded here.</div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please feel free to get in touch with us through the form below or by phone.</p>
+            <ul>
+                <li><strong>Email:</strong> contact@richhillfarm.com</li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+            </ul>
+            <form action="#" method="post">
+                <h3>Send Us a Message</h3>
+                <label for="name" style="display:none;">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email" style="display:none;">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message" style="display:none;">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Rich Hill Farm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
