@@ -1,0 +1,16 @@
+# Windows 系統檔
+Microsoft/
+*.dat
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Django / VSCode
+db.sqlite3
+*.sqlite3
+.vscode/
